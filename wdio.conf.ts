@@ -58,25 +58,25 @@ export const config: WebdriverIO.Config = {
         {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'automationTest',
-        'appium:platformVersion': '14.0',
+        'appium:deviceName': 'emulator-5554',
+        'appium:platformVersion': '14',
         'appium:automationName': 'UiAutomator2',
         'appium:app': './android/app/build/outputs/apk/release/app-release.apk',
         'appium:appPackage': 'com.studioapp',
         'appium:appActivity': 'com.studioapp.MainActivity',
-        'appium:noReset': true,
-        'appium:fullReset': false 
+        'appium:noReset': false,
+        'appium:fullReset': true 
         },
         {
         // capabilities for local Appium web tests on an iOS Emulator
-        platformName: 'iOS',
-        'appium:platformVersion': '18.2',
-        'appium:deviceName': 'iPhone 16',
-        'appium:automationName': 'XCUITest',
-        'appium:app': './ios/build/Build/Products/Debug-iphonesimulator/YourApp.app',
-        'appium:bundleId': 'com.yourcompany.yourapp',
-        'appium:noReset': true,
-        'appium:fullReset': false 
+        // platformName: 'iOS',
+        // 'appium:platformVersion': '18.2',
+        // 'appium:deviceName': 'iPhone 16',
+        // 'appium:automationName': 'XCUITest',
+        // 'appium:app': './ios/build/Build/Products/Debug-iphonesimulator/YourApp.app',
+        // 'appium:bundleId': 'com.yourcompany.yourapp',
+        // 'appium:noReset': true,
+        // 'appium:fullReset': false 
        }
     ],
 
